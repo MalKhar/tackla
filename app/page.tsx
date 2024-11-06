@@ -4,6 +4,7 @@ import background from "../public/background.jpg";
 import Background from "./components/background/background";
 import Timer from "./components/timer/timer";
 import Input from "./components/input/input";
+import Favorites from "./components/favorites/favorites";
 export default function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Home() {
           <div>
             <Timer />
             <Input />
+            <Favorites />
           </div>
         </main>
       </div>

@@ -16,7 +16,9 @@ export default function Timer() {
 
   return (
     <div>
-      <p className="text-8xl drop-shadow-lg">{time.toLocaleTimeString()}</p>
+      <p className="text-8xl drop-shadow-lg text-white">
+        {time.toLocaleTimeString()}
+      </p>
     </div>
   );
 }

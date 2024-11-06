@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Tiny5 } from "next/font/google";
+
 import "./globals.css";
+
+const tiny5 = Tiny5({ subsets: ["latin"], weight: "400" }); // Adjust 'weight' as needed
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,11 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${tiny5.className}`}>{children}</body>
     </html>
   );
 }
